@@ -1,0 +1,20 @@
+Creating a group
+  sudo groupadd IS
+
+Creating an administrative user for the department
+  sudo useradd -m -s /bin/bash -g IS is-admin
+
+Creating a normal user for the department
+  sudo useradd -m -s /bin/bash -g Us isuser
+
+Setting the appropiate ownerships for the directory
+  sudo chown is-admin.IS /IS
+
+Setting the appropiate permissions on the directory 
+  sudo chmod 1770 /IS
+
+Setting the appropiate ownerships for the file
+  sudo chown is-admin.IS /IS/isfile.txt
+
+Setting the appropiate permissions on the file
+  sudo chmod 740 /IS/isfile.txt
